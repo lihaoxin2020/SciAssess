@@ -34,7 +34,8 @@ class VllmCompletionFn(BaseCompletionFn):
             selected_port = self.port
         self.client = OpenAI(
             api_key = "EMPTY",
-            base_url = f"http://localhost:{selected_port}/v1"
+            base_url = f"http://localhost:{selected_port}/v1",
+            # base_url = f"http://mosaic-cirrascale-36.reviz.ai2.in:{selected_port}/v1"
         )
         try:
             messages[-1]['content'] = messages[-1]['content'][:int(self.max_len*2*0.9)]

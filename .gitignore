@@ -6,6 +6,7 @@ __pycache__/
 __pycache__
 */__pycache__
 SciAssess_library/pdfs/*
+SciAssess_library/*
 SciAssess.egg-info/
 SciAssess.egg-info/*
 wandb/

@@ -22,3 +22,13 @@ o1-mini:
   class: sciassess.Implement.completion_fns.o1-azure:O1Azure
   args:
       model: o1-mini
+
+gpt-4o-mini-my:
+  class: sciassess.Implement.completion_fns.openai_completion:OpenAICompletionFn
+  args:
+    model: gpt-4o-mini
+
+gpt-4o-my:
+  class: sciassess.Implement.completion_fns.openai_completion:OpenAICompletionFn
+  args:
+    model: gpt-4o
